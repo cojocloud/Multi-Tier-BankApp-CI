@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:bankapp-test
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+  h2:
+    console:
+      enabled: false
+
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 0
+
